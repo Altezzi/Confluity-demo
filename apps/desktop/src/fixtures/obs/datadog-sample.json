@@ -1,0 +1,11 @@
+{
+  "id": "dd-mon-88421",
+  "title": "[P1] High error rate on fleet-sync API",
+  "alert_type": "error",
+  "priority": "P1",
+  "monitor_id": 88421,
+  "monitor_name": "fleet-sync API error rate",
+  "permalink": "https://app.datadoghq.com/monitors/88421",
+  "body": "Error rate exceeded 5% for NW-4412 related sync endpoints over the last 5 minutes.",
+  "aggregation_key": "fleet-sync-api-errors"
+}

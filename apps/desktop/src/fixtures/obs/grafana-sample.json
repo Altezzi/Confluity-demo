@@ -1,0 +1,22 @@
+{
+  "receiver": "confluity",
+  "status": "firing",
+  "title": "[FIRING:1] Disk space critical on sync-hub",
+  "externalURL": "https://grafana.example.com/",
+  "alerts": [
+    {
+      "status": "firing",
+      "labels": {
+        "alertname": "DiskSpaceCritical",
+        "severity": "critical",
+        "instance": "sync-hub-01"
+      },
+      "annotations": {
+        "summary": "Disk usage above 92% on sync-hub-01 (asset NW-4412)"
+      },
+      "fingerprint": "grafana-fp-disk-01",
+      "generatorURL": "https://grafana.example.com/alerting/grafana/abc123/view",
+      "dashboardURL": "https://grafana.example.com/d/ops-disk/disk"
+    }
+  ]
+}

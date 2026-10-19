@@ -1,0 +1,18 @@
+{
+  "name": "confluity",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run tauri -w @confluity/desktop -- dev",
+    "build": "npm run tauri -w @confluity/desktop -- build",
+    "desktop:dev": "npm run tauri -w @confluity/desktop -- dev",
+    "desktop:build": "npm run tauri -w @confluity/desktop -- build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0"
+  }
+}

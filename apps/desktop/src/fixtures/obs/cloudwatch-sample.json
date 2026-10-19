@@ -1,0 +1,6 @@
+{
+  "Type": "Notification",
+  "MessageId": "cw-msg-1",
+  "TopicArn": "arn:aws:sns:us-east-1:123456789012:alarms",
+  "Message": "{\"AlarmName\":\"FleetSyncLatencyHigh\",\"AlarmDescription\":\"p99 latency above 2s\",\"AWSAccountId\":\"123456789012\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [2.4]\",\"StateChangeTime\":\"2026-08-12T18:00:00.000+0000\",\"Region\":\"us-east-1\",\"AlarmArn\":\"arn:aws:cloudwatch:us-east-1:123456789012:alarm:FleetSyncLatencyHigh\"}"
+}

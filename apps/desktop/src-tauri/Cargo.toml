@@ -1,0 +1,33 @@
+[package]
+name = "confluity"
+version = "0.1.0"
+description = "Confluity — AI Business Operating System"
+authors = ["Confluity"]
+edition = "2021"
+
+[lib]
+name = "confluity_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.32", features = ["bundled", "uuid"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+thiserror = "2"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "blocking"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
+parking_lot = "0.12"
+dirs = "6"
+tokio-postgres-rustls = { version = "0.14", features = ["ring"] }
+tokio-postgres = "0.7"
+rustls = { version = "0.23", default-features = false, features = ["ring", "std", "tls12"] }
+
+[dev-dependencies]
+tempfile = "3"

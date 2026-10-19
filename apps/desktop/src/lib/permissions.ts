@@ -1,0 +1,16 @@
+export {
+  MODULES,
+  MODULE_PERMISSION_GROUPS,
+  PANEL_FIELDS,
+  ROUTE_MODULE,
+  allPermissionKeys,
+  expandEffectivePermissions,
+  hasPermission,
+  moduleEditKey,
+  moduleForPath,
+  moduleViewKey,
+  type ModuleId,
+  type PermissionFieldDef,
+  type PermissionKey,
+  type ModulePermissionGroup,
+} from "@confluity/shared";
